@@ -119,6 +119,7 @@ class ScannerImpl : public android::net::wifi::BnWifiScannerImpl {
   bool pno_scan_results_from_offload_;
   ::com::android::server::wifi::wificond::PnoSettings pno_settings_;
 
+  uint32_t nodev_counter_;
   const uint32_t wiphy_index_;
   const uint32_t interface_index_;
 
